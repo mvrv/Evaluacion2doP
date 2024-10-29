@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reseñas</title>
+</head>
+<body>
+    <h1>Reseñas de Películas</h1>
+    <ul>
+        <% reviews.forEach(review => { %>
+            <li><%= review.author %>: <%= review.content %> - <%= review.rating %> estrellas</li>
+        <% }) %>
+    </ul>
+</body>
+</html>

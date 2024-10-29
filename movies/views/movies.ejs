@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Películas</title>
+</head>
+<body>
+    <h1>Películas</h1>
+    <ul>
+        <% movies.forEach(movie => { %>
+            <li><%= movie.title %> - <%= movie.description %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
